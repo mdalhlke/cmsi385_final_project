@@ -26,14 +26,6 @@ The string you entered is: 001
 Enter a description of an NFA:
 Press Command + D on OS X or Control + D on Windows when you are done.
 ACCEPT=q0
-q0:a->q2           
-q2:^CMacBook-Pro:nfa mayadahlke$ java NFA.java 001
-NFA Simulator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The string you entered is: 001
-Enter a description of an NFA:
-Press Command + D on OS X or Control + D on Windows when you are done.
-ACCEPT=q0
 q0:0->q1
 q1:0->q2
 q2:1->q0
@@ -44,3 +36,5 @@ transitions:{q0={0=[q1]}, q1={0=[q2]}, q2={1=[q0]}}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 001 is an accepted string in this NFA.
 ```
+
+Note: for lambda moves use this character `λ`
