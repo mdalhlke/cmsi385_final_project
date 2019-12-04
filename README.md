@@ -1,20 +1,18 @@
 # CMSI 385 Final Project
-Maya Dahlke
-
 ## NFA Simulator
-Coded in Java   
+Coded in: Java   
 Implement a command line program which takes in a description of an NFA (via STDIN) and a string (via command line arg) and returns whether or not the string is accepted in the language of the NFA passed in.  
 
-> Recommended Input Format:    
-> START=q0; ACCEPT=q2,q1
->
-> q0:a->q1
->
-> q0:a->q2
->
-> q0->q2
->
-> q0:a->q0
+Recommended Input Format:    
+START=q0; ACCEPT=q2,q1
+
+q0:a->q1
+
+q0:a->q2
+
+q0->q2
+
+q0:a->q0
 
 Example input on command line (MacOS):
 ```
@@ -44,4 +42,4 @@ MacBook-Pro:nfa mayadahlke$
 ```
 
 Note: To test if the NFA accepts lambda, use this character `λ`  
-    Example: `MacBook-Pro:nfa mayadahlke$ java NFA.java λ` 
+e.g.`MacBook-Pro:nfa mayadahlke$ java NFA.java λ` 
