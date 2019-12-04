@@ -19,22 +19,29 @@ Implement a command line program which takes in a description of an NFA (via STD
 Example input on command line (MacOS):
 ```
 MacBook-Pro:nfa mayadahlke$ javac NFA.java
-MacBook-Pro:nfa mayadahlke$ java NFA.java 001
+MacBook-Pro:nfa mayadahlke$ java NFA.java a
 NFA Simulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The string you entered is: 001
+The string you entered is: a
 Enter a description of an NFA:
 Press Command + D on OS X or Control + D on Windows when you are done.
-ACCEPT=q0
-q0:0->q1
-q1:0->q2
-q2:1->q0
+START=q0; ACCEPT=q2,q1
+
+q0:a->q1
+
+q0:a->q2
+
+q0->q2
+
+q0:a->q0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 start:q0
-end:[q0]
-transitions:{q0={0=[q1]}, q1={0=[q2]}, q2={1=[q0]}}
+end:[q1, q2]
+transitions:{q0={a=[q1, q2, q0], λ=[q2]}}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-001 is an accepted string in this NFA.
+a is an accepted string in this NFA.
+MacBook-Pro:nfa mayadahlke$ 
 ```
 
-Note: for lambda moves use this character `λ`
+Note: To test if the NFA accepts lambda, use this character `λ`  
+    Example: `MacBook-Pro:nfa mayadahlke$ java NFA.java λ` 
