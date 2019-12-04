@@ -1,6 +1,7 @@
 # CMSI 385 Final Project
 ## NFA Simulator
-Coded in: Java   
+Coded in: Java
+IDE: Eclipse - Version: 2019-09 R (4.13.0)
 Implement a command line program which takes in a description of an NFA (via STDIN) and a string (via command line arg) and returns whether or not the string is accepted in the language of the NFA passed in.  
 
 Recommended Input Format:    
